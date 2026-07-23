@@ -1,0 +1,71 @@
+*,
+*::before, 
+*::after { 
+  box-sizing:border-box; /*para ser aplicado nos dois*/
+}
+
+*{
+  margin:0;
+  padding:0;
+  font:inherit; /*reset de fonte*/
+  
+  /*deixa a fonte mais suave/fina*/ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/*iniciando as variaveis de cores e fontes*/
+:root {
+  --background-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-primary: #F4F4F5;
+  --text-color-secondary: #A1A1AA;
+
+  --brand-gradient: #FC4A1A #F7B733
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+
+  --font-family-sans:'Inter', system-ui, sans-serif;
+  --font-weight-base: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+
+ /*criando variaveis para mobile*/
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.5rem;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-base);
+  font-size: var(--font-weight-base);
+  line-heigth: 1.6;
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,h2,h3 {
+  line-heigth: 1.2;
+  color: var(--text-color-primary);
+  font-weight: var (--font-weight-bold);
+  latter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2{
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}

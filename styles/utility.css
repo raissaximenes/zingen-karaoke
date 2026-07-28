@@ -1,3 +1,18 @@
+.py-base{
+  padding-block: var(--py-base);
+}
+.py-lg{
+  padding-block: var(--py-lg);
+}
+
+.py-xl{
+  padding-block: var(--py-xl);
+}
+
+.px-lg{
+  padding-block: var(--px-lg);
+}
+
 .container {
   --max-width: 375px;
 
@@ -6,8 +21,27 @@
   margin-inline: auto;
 }
 
+.desktop-only {
+  display: none; 
+}
+
+/*"Even Columns" para organizar elementos em colunas iguais em diferentes dispositivos.*/
+.even.colums {
+  display: grid;
+  gap: 1rem;
+}
+
 @media (width >= 80em) {
   .container {
     --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even.colums {
+    grid-auto-flow: colums;
+    grid-auto-colums: 1fr;
   }
 }

@@ -16,7 +16,10 @@
 }
 
 .btn:hoover {
-  background-color: var(linear-gradient(90deg, #FC4A1A, #F7B733));
+  background-color: var(linear-gradient(90deg, #FC4A1A 0%, #F7B733 100%));
+
+  -webkit-background-clip: initial;
+  background-clip: initial;
 }
 
 .btn-sm {
@@ -48,7 +51,7 @@
 
   &::after {
     content: attr(aria-label);  /*attr pega um atributo*/ 
-    background: var(linear-gradient(90deg, #FC4A1A, #F7B733));
+    background: var(--brand-gradient);
     -webkit-background-clip: text;
     background-clip: text; 
     color:transparent;

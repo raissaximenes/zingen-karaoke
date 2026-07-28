@@ -1,0 +1,56 @@
+.btn {
+  border: 0;
+  background-color: transparent;
+
+  display:flex;
+  align-itens: center;
+  justify-content: center;
+  width: fit-content;
+
+  border-radius: .5rem; 
+  cursor: pointer;
+  font: var(--fw-md) var(-fs-base) 1.5rem/ var(--ff-sans);
+
+  background: var(--text-color-primary);
+  color: var(--background-color);
+}
+
+.btn:hoover {
+  background-color: var(linear-gradient(90deg, #FC4A1A, #F7B733));
+}
+
+.btn-sm {
+  font-size: var(--fs-sm);
+  padding: .5rem 1rem;
+}
+
+.btn-md{
+  font-size: var(--fs-base);
+  padding: 0.75rem 1.5rem;
+} 
+
+.btn-lg {
+  font-size: 1.123rem;
+  padding: 1rem 2rem;
+}
+
+.btn[area-label] {
+
+  position: absolute; 
+
+  &::before {
+     content: "";
+     position:absolute;
+     border-radius: inherit;
+     inset: 0.09375rem;
+     background-color: var(--background-color);
+  }
+
+  &::after {
+    content: attr(aria-label);  /*attr pega um atributo*/ 
+    background: var(linear-gradient(90deg, #FC4A1A, #F7B733));
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color:transparent;
+  }
+}

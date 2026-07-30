@@ -3,23 +3,25 @@
   background-color: transparent;
 
   display:flex;
-  align-itens: center;
+  align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: fit-content; /*se encaixa ao conteudo*/
 
   border-radius: .5rem; 
   cursor: pointer;
-  font: var(--fw-md) var(-fs-base) 1.5rem/ var(--ff-sans);
+  font: var(--font-weight-medium) var(--fs-base) / 1.5 var(--ff-sans);
 
   background: var(--text-color-primary);
   color: var(--background-color);
 }
 
-.btn:hoover {
-  background-color: var(linear-gradient(90deg, #FC4A1A 0%, #F7B733 100%));
+.btn:hover {
+  --btn-color: var(--surface-color);
+  background: var(--brand-gradient);
 
   -webkit-background-clip: initial;
   background-clip: initial;
+  color: var(--background-color);
 }
 
 .btn-sm {
@@ -33,19 +35,19 @@
 } 
 
 .btn-lg {
-  font-size: 1.123rem;
+  font-size: 1.125rem;
   padding: 1rem 2rem;
 }
 
-.btn[area-label] {
+.btn[aria-label] {
 
-  position: absolute; 
+  position: relative; 
 
   &::before {
-     content: "";
-     position:absolute;
+     content:"";
+     position: absolute;
      border-radius: inherit;
-     inset: 0.09375rem;
+     inset: 1.5px;
      background-color: var(--background-color);
   }
 
@@ -54,6 +56,21 @@
     background: var(--brand-gradient);
     -webkit-background-clip: text;
     background-clip: text; 
-    color:transparent;
+    color: transparent;
+    position: relative;
+    z-index:1;
+  }
+}
+
+@media (width >= 80em) {
+
+  .btn-sm{
+    font-size: var(--fs-base);
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-md {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
   }
 }

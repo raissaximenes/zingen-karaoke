@@ -19,6 +19,7 @@
   width: min(var(--max-width), 100% - (var(--px-lg) * 2));
  /*border: 2px solid violet; */
   margin-inline: auto;
+  margin-top: 1.5rem;
 }
 
 .desktop-only {

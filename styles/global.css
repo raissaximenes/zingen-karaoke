@@ -83,9 +83,7 @@ a {
 
 a:hover {
   background: linear-gradient(
-    90deg,
-    #F7B733 0%,
-    #FC4A1A 100%);
+    90deg, #F7B733 0%, #FC4A1A 100%);
 
   -webkit-background-clip: text;
   background-clip: text;
@@ -94,6 +92,11 @@ a:hover {
 
 ul [role="list"] {
   list-style: none; /*quando eu coloco role=list eu defino que e uma lista para manter o padrao de acessibilidade*/
+}
+
+img {
+  max-width: 100%;
+  display:inline-block;
 }
 
 @media (width >= 80em) {

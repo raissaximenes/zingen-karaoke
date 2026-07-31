@@ -27,7 +27,7 @@
 }
 
 /*"Even Columns" para organizar elementos em colunas iguais em diferentes dispositivos.*/
-.even.colums {
+.even.columns {
   display: grid;
   gap: 1rem;
 }
@@ -62,8 +62,10 @@
     display: initial;
   }
 
-  .even.colums {
-    grid-auto-flow: colums;
-    grid-auto-colums: 1fr;
+  .even.columns {
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
+
 }

@@ -92,7 +92,7 @@ a:hover {
   color: transparent;
 }
 
-ul [role="list"] {
+ul[role="list"] {
   list-style: none; /*quando eu coloco role=list eu defino que e uma lista para manter o padrao de acessibilidade*/
 }
 

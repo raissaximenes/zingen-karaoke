@@ -1,0 +1,48 @@
+footer {
+  color: var(--text-color-secondary);
+  font-weight: var(--font-weight-medium);
+
+  & .container,
+  & .top {
+    gap: 3rem;
+  }
+
+  & nav .even-columns{
+    gap:4rem;
+  }
+  
+  & .top ul{
+    align-content:start;
+  }
+
+  & .title {
+    font-size: 0.75rem;
+    letter-spacing:0.08em;
+    color: var(--brand-color-primary);
+    text-transform:uppercase;
+  }
+
+  & .bottom {
+    flex-wrap:wrap;
+
+    & > div{
+      margin-right: auto;
+    }
+  }
+}
+
+@media (width >= 80em){
+
+ .container {
+  padding-in-line: 0;
+  padding-botton: 2rem;
+ }
+
+ & .top {
+  grid-template-columns: auto 1fr;
+
+  & nav {
+    margin-left:auto;
+  }
+ }
+}

@@ -27,5 +27,7 @@ section{
 }
 
 @media (width >= 80em) {
-  
+  #mobile{
+    display:none;
+  }
 }

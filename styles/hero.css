@@ -2,7 +2,7 @@
   text-align: center;
   background-image: url(../assets/icons/illustration.svg);
   
-  & img [src*="music"]{ /*seletor que pega qualquer coisa que estiver entre aspas*/
+  & img[src*="music"]{ /*seletor que pega qualquer coisa que estiver entre aspas*/
     width:12.875rem;
   }
 
